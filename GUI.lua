@@ -93,7 +93,6 @@ local Toggle = AFKTab:CreateToggle({
         antiAfkEnabled = Value
         
         if antiAfkEnabled then
-            -- Inside the toggle, start Anti-AFK functionality
             local vu = game:GetService("VirtualUser")
             game:GetService("Players").LocalPlayer.Idled:Connect(function()
                 if antiAfkEnabled then
@@ -332,3 +331,5 @@ local Slider = PlayerTab:CreateSlider({
 })
 
 Rayfield:LoadConfiguration()
+
+-- For whomever is reading this this is made to be open source and I am considering making it not open source
